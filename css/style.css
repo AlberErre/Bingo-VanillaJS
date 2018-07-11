@@ -23,14 +23,14 @@
 }
 
 .carton{
-  border: solid 3px #aaa;
+  border: solid 3px #99d8e9;
   border-radius: 7px;
   height: 100%;
   width: 100%;
 }
 
 .carton2{
-  border: solid 3px #aaa;
+  border: solid 3px #e60042;
   border-radius: 10px;
   height: 100%;
   width: 100%;
@@ -38,9 +38,11 @@
 
 .cartonElement {
   display: inline-block;
-  border: solid 3px #aaa;
-  border-radius: 50px;
-  font-size: 32px;
+  border: solid 3px #eeeeee;
+  border-radius: 100px;
+  font-size: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .randomNumber{
@@ -58,7 +60,7 @@
 .button{
   text-align: center;
   font-size: 40px; 
-  border: solid 3px #aaa;
+  border: solid 3px #eeeeee;
   border-radius: 7px;
   margin-top: 40px;
   margin-right: 40px;
