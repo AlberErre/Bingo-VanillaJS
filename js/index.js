@@ -19,16 +19,17 @@ const playBINGO = () => {
   const newNumerosCPU = numerosCPU.filter(i => i != `<p id="cpu_${currentBingoNumber}"class="cartonElement">${currentBingoNumber}</p>`);
   
   //Check if any player has won
+  // .join(' ') is used to display only
   if (newNumerosPlayer.length == 0 ) {
    cartonPlayer.innerHTML = '<h1>Player has won!!</h1>';
   } else {
-   cartonPlayer.innerHTML = newNumerosPlayer;
+   cartonPlayer.innerHTML = newNumerosPlayer.join(' ');
   }
   
   if (newNumerosCPU.length == 0) {
    cartonCPU.innerHTML = '<h1>CPU has won!!</h1>';
   } else {
-   cartonCPU.innerHTML = newNumerosCPU;
+   cartonCPU.innerHTML = newNumerosCPU.join(' ');
   }
   
   // Update cards
@@ -46,8 +47,9 @@ const resetBINGO = () => {
   const RawNumerosCPU = createCard();
   numerosPlayer = RawNumerosPlayer.map(o => `<p id="player_${o}"class="cartonElement">${o}</p>`);
   numerosCPU = RawNumerosCPU.map(u => `<p id="cpu_${u}"class="cartonElement">${u}</p>`);
-  cartonPlayer.innerHTML = numerosPlayer;
-  cartonCPU.innerHTML = numerosCPU;
+  // .join(' ') is used to display only
+  cartonPlayer.innerHTML = numerosPlayer.join(' ');
+  cartonCPU.innerHTML = numerosCPU.join(' ');
   
   // Reset bolas pool
   let bolasRaw = _.range(0,90);
