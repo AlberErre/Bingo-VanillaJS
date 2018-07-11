@@ -1,0 +1,66 @@
+.game {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.player{
+    width: 100%;
+    text-align: center;
+}
+
+.arbitro{
+    width: 100%;
+    text-align: center;
+}
+
+.cpu{
+    width: 100%;
+    text-align: center;
+}
+
+.carton{
+  border: solid 3px #aaa;
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+}
+
+.carton2{
+  border: solid 3px #aaa;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.cartonElement {
+  display: inline-block;
+  border: solid 3px #aaa;
+  border-radius: 50px;
+  font-size: 32px;
+}
+
+.randomNumber{
+  text-align: center;
+  font-size: 60px; 
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: space-between;
+}
+
+.button{
+  text-align: center;
+  font-size: 40px; 
+  border: solid 3px #aaa;
+  border-radius: 7px;
+  margin-top: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
